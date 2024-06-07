@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif";
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+header{
+    position:relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: xx-large;
+    animation: header 1.3s forwards;
+}
+
+@keyframes header{
+    from {
+        top: -100px;
+    }
+    to{
+        top: 0px;
+    }
+}
+
+.navbar{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5em;
+    width: 100%;
+    font-size: 40px;
+}
+
+.home, .songs, .artists{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 1.6em;
+    width: 3.5em;
+    background-color:white;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.home:hover, .songs:hover, .artists:hover{
+    scale: 103%;
+    box-shadow: 1px 2px 100px rgb(224, 223, 223);
+}
+section{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    font-size: 40px;
+    background-color: rgba(152, 146, 146, 0.671);
+    width: 25%;
+    border-radius: 0px  20px  20px 0px;    
+    padding: 10px;
+}
+
+
+.card-details{
+    display: flex;
+    background-color: white;
+    margin-left: auto;
+    color: black;
+    width: 70%;
+    flex: 50%;
+    border-radius:20px 0 0  20px ;    
+    padding-left: 15px;
+}
+
+.card-details::selection{
+    background-color: green;
+    color: black;
+}
+
+.songs-section, .artists-section{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#song-card, #artist-card{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    border-radius: 3%;
+    margin: 30px;
+    padding: 20px;
+    margin-bottom: 0;
+    transition: all 0.2s ease-in-out;
+    color: rgba(238, 238, 238, 0.683);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#song-card:hover, #artist-card:hover{
+    cursor: pointer;
+    scale: 102%;
+    border: 0.2px solid gainsboro;
+    opacity: 0.8;
+    color: white;
+}
+
+.song1{
+    background-image: url(image1.png);
+}
+.song2{
+    background-image: url(Future_and_Metro_Boomin_-_We_Don\'t_Trust_You.png);
+}
+.song3{
+    background-image: url(beforethealbum.webp);
+}
+.song4{
+    background-image: url(submarine.webp);
+}
+.song5{
+    background-image: url(whereihavebeen.webp);
+}
+.song6{
+    background-image: url(316x316bf\ \(1\).webp);
+}
+
+.artist1, .artist2, .artist3, .artist4, .artist5, .artist6{
+    background-image: url(image.png);
+    background-size: cover;
+}
+
+.text{
+    position: absolute;
+    background-color: rgba(142, 139, 139, 0.7);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    border-radius: 0 0 10px 10px ;
+}

@@ -25,7 +25,7 @@ header{
         top: -100px;
     }
     to{
-        top: 0px;
+        top: 40px;
     }
 }
 
@@ -49,7 +49,6 @@ header{
     background-color:white;
     border-radius: 10px;
     transition: all 0.2s;
-
 }
 
 a{
@@ -80,8 +79,8 @@ section{
     color: black;
     width: 70%;
     flex: 50%;
-    border-radius:20px 0 0  20px ;    
-    padding-left: 15px;
+    border-radius:20px 0 0  20px ;  
+    padding: 10px 0 10px 15px;
 }
 
 .card-details::selection{
@@ -121,28 +120,48 @@ section{
 }
 
 .song1{
-    background-image: url(image1.png);
+    background-image: url(images/image1.png);
 }
 .song2{
-    background-image: url(Future_and_Metro_Boomin_-_We_Don\'t_Trust_You.png);
+    background-image: url(images/Future_and_Metro_Boomin_-_We_Don\'t_Trust_You.png);
 }
 .song3{
-    background-image: url(beforethealbum.webp);
+    background-image: url(images/beforethealbum.webp);
 }
 .song4{
-    background-image: url(submarine.webp);
+    background-image: url(images/submarine.webp);
 }
 .song5{
-    background-image: url(whereihavebeen.webp);
+    background-image: url(images/whereihavebeen.webp);
 }
 .song6{
-    background-image: url(316x316bf\ \(1\).webp);
+    background-image: url(images/316x316bf\ \(1\).webp);
 }
 
 .artist1, .artist2, .artist3, .artist4, .artist5, .artist6{
-    background-image: url(image.png);
+    background-repeat: no-repeat;
     background-size: cover;
 }
+
+.artist1{
+    background-image: url(images/jelly-roll-z4p-artistchart-nml-344x344.jpg);
+}
+.artist2{
+    background-image: url(images/taylor-swift-9sy-artistchart-ko8-344x344.jpg);
+}
+.artist3{
+    background-image: url(images/kendrick-lamar-atc-artist-chart-xmj-344x344.jpg);
+}
+.artist4{
+    background-image: url(images/ed-sheeran--1666953393-editorial-short-form-0.jpg);
+}
+.artist5{
+    background-image: url(images/baileyzimmerman-qt3-artistchart-he0-344x344.jpg);
+}
+.artist6{
+    background-image: url(images/post-malone-8b5-artistchart-btp-344x344.jpg);
+}
+
 
 .text{
     position: absolute;
@@ -152,4 +171,40 @@ section{
     width: 100%;
     padding: 4px;
     border-radius: 0 0 10px 10px ;
+}
+
+.text1{
+    position: absolute;
+    background-color: rgba(142, 139, 139, 0.7);
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    border-radius: 0 0 10px 10px ;
+    text-align: center;
+}
+
+.footer{
+    display:block;
+    height: 5%;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    section, .card-details{
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: none;
+    }
+    .navbar{
+        height: 100%;
+        flex-direction: column;
+    }
+    .home, .songs, .artists{
+        margin: 20px;
+    }
 }

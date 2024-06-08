@@ -21,3 +21,6 @@ In the end,
 A footer was added with relevant information about the page
 
 ** Required responsive media queries were added throught the content of the page to make it more accessible to various forms of devices. 
+
+
+Thank you! 💻👨‍💻
